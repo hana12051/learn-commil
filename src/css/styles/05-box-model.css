@@ -1,0 +1,23 @@
+/* 박스모델 */
+/* 블록 박스 */
+.block {
+  background-color: rgb(130, 197, 255);
+}
+span {
+  background-color: rgb(255, 130, 130);
+  display: block;
+  width: 5em;
+}
+
+/* 인라인 박스는 위에 있는 것과 적용할 수 없다. */
+.love {
+  background-color: gold;
+  display: inline;
+  width: 5em;
+}
+
+.hezi {
+  background-color: slategray;
+  display: inline-block;
+  width: 300px;
+}

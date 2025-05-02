@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테이블 관련 요소</title>
+    <link rel="shortcut icon" href="/public/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <link rel="preload" as="font" href="/public/font/suit/SUIT-Variable.woff2" />
+    <link rel="stylesheet" href="/public/font/suit/SUIT-Variable.css" />
+    <style>
+      body {
+        font-family: 'SUIT Variable', sans-serif;
+      }
+      .table1 {
+        border: 1px solid currentColor;
+        border-collapse: collapse;
+      }
+      .table1 th,
+      .table1 td {
+        border: 1px solid currentColor;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body style="font-size: 36px">
+    <a href="/index.html">메인 페이지 이동</a>
+    <br />
+    <h1>테이블 관련 요소</h1>
+
+    <!-- 첫 번째 테이블 -->
+    <table class="table1">
+      <tr>
+        <th scope="col">이름</th>
+        <th scope="col">국어</th>
+        <th scope="col">수학</th>
+      </tr>
+      <tr>
+        <td>홍길동</td>
+        <td>80</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>이영희</td>
+        <td>70</td>
+        <td>100</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <!-- 두 번째 테이블 -->
+    <table class="table1">
+      <tr>
+        <th scope="row">학습시간</th>
+        <td>09:00 ~ 17:00 (28시간)</td>
+        <th scope="row">난이도</th>
+        <td>초급</td>
+      </tr>
+      <tr>
+        <th scope="row">교육비 지원</th>
+        <td>고용보험 비환급</td>
+        <th scope="row">평가항목</th>
+        <td>출석율 100%</td>
+      </tr>
+      <tr>
+        <th scope="row">수료기준</th>
+        <td>총점 80점 이상시 수료</td>
+        <th scope="row">정원</th>
+        <td>24명</td>
+      </tr>
+      <tr>
+        <th scope="row">교육정보</th>
+        <td colspan="3">입문자를 위한 깃과 코딩들</td>
+      </tr>
+    </table>
+  </body>
+</html>

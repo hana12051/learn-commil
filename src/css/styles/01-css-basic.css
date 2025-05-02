@@ -1,0 +1,10 @@
+/* 제목 요소에 글자 크기 지정하기 */
+body{
+  background-color:rgba(0, 256 /0.5);
+}
+h1 {
+  font-size: small; /* small로 수정 */
+  border-width: 10px;
+  border-style: solid; /* solid로 수정 */
+  border-color: currentColor;
+}

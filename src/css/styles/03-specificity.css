@@ -1,0 +1,42 @@
+/* 상속과 겹침 우선순위 */
+.wrapper {
+  color: green;
+  border: 1px solid blue;
+}
+
+/* #container p{
+  color: teal;
+} */
+
+.wrapper {
+  border: inherit;
+  color: purple;
+}
+
+/* 상속으로 인한 겹침 */
+body{
+  color: red;
+}
+
+/* 겹침, 우선순위 (선택자에 의해) */
+
+p.ai{
+  color: purple;
+}
+
+.ai.copilot {
+  color: red;
+}
+
+p{
+  color: red;
+}
+
+p{
+  color: gray;
+}
+
+p{
+  color:pink !important;
+}
+

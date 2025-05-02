@@ -1,0 +1,39 @@
+/* 타이포 및 단위 */
+@import '/src/common/mini-reset.css';
+:root {
+  font-size: 30px;
+  @media (min-width: 600px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 30px;
+  }
+  /* 모든 html의 기본 픽셀로 섲얼한거임. */
+  .lion {
+  }
+
+  /* rem -- root를 기준으로 계산 */
+  .like {
+    font-size: 2rem; /* 2배 */
+  }
+
+  .dootcamp {
+    .link {
+      font-size: 2rem;
+      color: brown;
+      line-height: 1.5;
+    }
+  }
+}
+/* vw단위 뷰포트를 단위로 계산 */
+.school {
+  .link {
+    font-size: 5vw; /* 2배 */
+    color: aqua;
+
+    em {
+      font-style: italic;
+    }
+  }
+}
