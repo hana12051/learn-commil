@@ -1,0 +1,69 @@
+/* css충첩 */
+/* 일반 CSS */
+.parent {
+  background-color: #f4a261;
+  padding: 20px;
+}
+
+.parent .child {
+  color: white;
+  font-size: 16px;
+}
+/* css충첩 */
+.parent {
+  background-color: #f4a261;
+  padding: 20px;
+
+  .child {
+    color: white;
+    font-size: 16px;
+  }
+}
+
+button {
+  color: red;
+
+  &:hover {
+    background-color: yellow;
+  }
+  /* 관례상 빈줄을 넣음음 */
+  &::before {
+  }
+  content: '콘텑츠';
+}
+
+/* 미디어ㅓ 쿼리 예시 */
+/* 콘텐츠 거저는 모든 기기에 다 적용된다는 거모든 디바이스스 */
+.container {
+  width: 100%;
+  padding: 20px;
+}
+/* @가 들어가는 건 선언 규칙임. 웹폰트 선어 css파일 가져오기 등
+이번주 관제는 반응형 미ㅌ디어 쿼리 중요 선택자가 먼저 등자하지않음 미리터 궈리 먼저해주고 조건을 먼저 줘야 함. 
+뷰포트 가로인지 세로인지 장치가 새로인지 가로인지.화면의 보이는 뷰포트의 크기가 최소 768 이상이여지만 접근 가능하게 만드는 것. 
+여 밒에 는 제기정하는 하는 것. 768엣서 750으조 제지정 아래로 가야함. 
+미디어 쿼지 조건이  모든 것에 있어서 앞에 있음.  */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* css-중첩 미디어ㅓ 쿼리 예시 */
+.container {
+  /* 모든 디바이스에서 */
+  width: 100%;
+  padding: 20px;
+  /* 최소 768px이상부터 */
+  @media (min-width: 768px) {
+    width: 750px;
+  }
+}
+/* sass의 차이점 */
+/* 아래와 같이 &요소는 부모로 치완될 수 없음  */
+.menu__list {
+}
+
+.menu__list .menu__list {
+}
+/* CSS Nesting은 CSS 코드를 더 구조적이고 가독성 있게 작성할 수 있도록 도와줍니다. 이 기능을 사용하면 복잡한 CSS 구조를 더 쉽게 관리할 수 있으며, 코드의 유지보수성도 향상됩니다. 다만, 아직 모든 브라우저에서 지원되지 않을 수 있으므로, 프로젝트의 요구사항에 따라 적절히 사용하는 것이 중요합니다. */

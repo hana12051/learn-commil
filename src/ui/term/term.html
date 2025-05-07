@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹 관련 용어 - position 예제</title>
+    <link rel="shortcut icon" href="/public/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <link rel="preload" as="font" href="/public/font/suit/SUIT-Variable.woff2" />
+    <link rel="stylesheet" href="/public/font/suit/SUIT-Variable.css" />
+    <link rel="stylesheet" href="/src/common/index.css" />
+    <link rel="stylesheet" href="/src/ui/term/term.css" />
+  </head>
+  <body>
+    <a href="/index.html">메인 페이지 이동</a>
+    <br />
+    <h1>웹 관련 용어 - position 예제</h1>
+    <hr />
+    <!-- 용어 컴포넌트 -->
+     <dl>
+    <div class="term">
+      <dt>용어 제목</dt>
+      <dd>용어 설명 내용입니다.</dd>
+      <dd><img src="/src/assets/thumbnail/web-a11y.png" alt="" /></dd>
+    </div>
+    <hr />
+    <section class="term-section">
+      <h2>웹 관련 용어</h2>
+      <dl>
+      <div class="term">
+        <dt>웹 표준 이란?</dt>
+        <dd>W3C 단체에서 규졍한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은...</dd>
+        <dd><img src="/src/assets/thumbnail/web-standards.png" alt="" /></dd>
+      </div>
+      <div class="term">
+        <dt>웹 접근성이란?</dt>
+        <dd>모든 사용자가 신체적,환경적 조건에 관계없이 웹 사이트에서 제공하는...</dd>
+        <dd><img src="/src/assets/thumbnail/web-a11y.png" alt="" /></dd>
+      </div>
+      </dl>
+    </section>
+    <br />
+     <section class="notification-section">
+    <h1 class="section-title">Notification</h1>
+
+    <ul class="notification-list">
+      <!-- 알림 카드 1 -->
+      <li class="notification-card plant">
+        <div class="notification-icon">
+          <img src="/src/assets/svg/pot.svg" alt="화초 아이콘" />
+        </div>
+        <div class="notification-content">
+          <strong class="notification-title">화초 관리</strong>
+          <p class="notification-desc">화초에 물을 줄 시간입니다.</p>
+        </div>
+        <span class="notification-time">6분</span>
+      </li>
+
+      <!-- 알림 카드 2 -->
+      <li class="notification-card food">
+        <div class="notification-icon">
+          <img src="/src/assets/svg/rice.svg" alt="식사 아이콘" />
+        </div>
+        <div class="notification-content">
+          <strong class="notification-title">아이 식사</strong>
+          <p class="notification-desc">아이에게 식사를 차려줄 시간입니다.</p>
+        </div>
+        <span class="notification-time now">지금</span>
+      </li>
+    </ul>
+  </section>
+  </body>
+</html>

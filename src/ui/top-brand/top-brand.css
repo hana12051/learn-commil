@@ -1,0 +1,62 @@
+.top-brand-section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.top-brand-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* 🔹 제목 사이 여백 추가 */
+}
+
+.top-brand-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.top-brand-section li {
+  float: left;
+  width: 20%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+
+.top-brand-item {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 16px;
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+  /* 🔹 transform 제거 */
+}
+
+.top-brand-item:hover {
+  /* transform: translateY(-4px); 제거됨 */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.top-brand-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.top-brand-item figcaption a {
+  text-decoration: none;
+  color: #222;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.top-brand-item figcaption a:hover {
+  text-decoration: underline;
+}

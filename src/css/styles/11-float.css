@@ -1,0 +1,28 @@
+/* CSS Float */
+.bootcamp {
+  display: flow-root;
+  border: 1px solid red;
+  overflow: hidden;
+
+  img {
+    width: 150px;
+    border: 1px solid green;
+  }
+
+  .tree {
+    float: right;
+    position: relative;
+  }
+
+  .rabbit {
+    float: left;
+    position: relative;
+  }
+
+  .lion {
+    clear: right both;
+  }
+}
+p {
+  background: rgb(255, 255, 189);
+}

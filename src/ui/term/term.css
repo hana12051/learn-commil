@@ -1,0 +1,154 @@
+/* 웹 관련 용어 - position 예제 */
+body {
+  margin: 50px;
+}
+
+/* 용어 컴포넌트 스타일 */
+.term {
+  padding-left: 76px;
+  position: relative;
+  min-height: 68px;
+
+  em {
+    color: #296897;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #181818;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* 용어 섹션 스타일링 */
+.term-section {
+  background: #ccc linear-gradient(#ccc, #eee);
+  border: 1px solid #555;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 16.25rem;
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .term {
+    margin-top: 1rem;
+
+    &:nth-of-type(even) {
+      padding-inline: 0 68px;
+
+      img {
+        left: initial;
+        right: 0;
+      }
+    }
+  }
+}
+
+/* 전체 알림 영역 */
+body {
+  background-color: #f4f5f7;
+  font-family: 'SUIT', sans-serif;
+  padding: 40px;
+}
+
+.notification-section {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.section-title {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* 알림 카드 리스트 */
+.notification-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* 공통 알림 카드 스타일 */
+.notification-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fefefe;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* 아이콘 */
+.notification-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+/* 텍스트 콘텐츠 */
+.notification-content {
+  flex: 1;
+  margin-left: 16px;
+}
+
+.notification-title {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.notification-desc {
+  font-size: 0.875rem;
+  color: #666;
+  margin: 0;
+}
+
+/* 시간 텍스트 */
+.notification-time {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* 개별 색상 */
+.notification-card.plant {
+  /* background-color: #ebf9f1; */
+}
+
+.notification-card.plant .notification-title {
+  color: #2eaf61;
+}
+
+.notification-card.plant .notification-time {
+  color: #2eaf61;
+}
+
+.notification-card.food {
+  /* background-color: #fff5ef; */
+}
+
+.notification-card.food .notification-title {
+  color: #d97b38;
+}
+
+.notification-card.food .notification-time {
+  color: #d97b38;
+}
