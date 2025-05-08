@@ -1,0 +1,35 @@
+/* css 변수 */
+:root {
+  /* 이건 전역 상속 */
+  --main-color: rgb(49, 83, 3);
+  --red: #f00;
+}
+
+body {
+  --main-color: rgb(49, 83, 3);
+  /* 나중에 이 값을 빼다 사용 할려고 일부러 만드는는 것것 전역 상속아님. */
+
+  margin: 50px;
+  background: #ffc;
+  color: var(--main-color);
+  /* --main-color를 사용하여 색상 지정 */
+}
+
+a {
+  --red: #f00;
+  /* --red를 사용하여 색상 지정 */
+  border: 1px solid var(--main-color);
+  /* --main-color를 사용하여 테두리 색상 지정 */
+  /* --변수이름은 변수가 정의된 요소와 그 하위 요소에서만 사용할 수 있어요.
+즉, body에서 정의된 --main-color는 body와 그 자식 요소 전체에서 사용 가능.
+a 요소 안에서 정의한 --red는 그 a 요소 내부에서만 유효함.
+상속처럼 보이지만, 사실은 정의된 범위(scope) 안에서만 동작하는 것. */
+}
+
+span {
+  color: var(--red);
+}
+
+h1 {
+  box-shadow: 5px 5px 5px 5px var(--main-color);
+}
