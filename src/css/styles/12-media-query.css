@@ -1,0 +1,29 @@
+/* css스타일링 */
+/* 스크린 스타일 */
+body {
+  margin: 50px;
+  color: #fff;
+  background: #000;
+}
+/* 320px 이상의 디바이스, 태블릿 768 톤상적인
+@media screen and (max-width: 320px) {
+  body {
+    color: rgb(170, 185, 100);
+    background: rgb(3, 1, 100);
+  }
+}
+/* 768px 이상 디바이스스태블릿 */
+/* @media screen and (max-width: 768px) {
+  body {
+    color: rgb(235, 82, 71);
+    background: rgb(28, 54, 1);
+  }
+} */
+
+/* 1280px 이상 디바이스스노트북북 */
+/* @media screen and (max-width: 1280px) {
+  body {
+    color: rgb(156, 62, 211);
+    background: rgb(31, 5, 59);
+  }
+} */
