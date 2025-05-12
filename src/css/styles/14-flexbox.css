@@ -1,0 +1,47 @@
+/* Flex 레이아웃 */
+body {
+  margin: 50px;
+}
+
+/* 상자 별로 서로 다른 색상 지정하기 */
+div {
+  div:nth-child(1) {
+    background: var(--yellow);
+  }
+  div:nth-child(2) {
+    background: var(--coral);
+  }
+  div:nth-child(3) {
+    background: var(--mint);
+  }
+  div:nth-child(4) {
+    background: var(--blue);
+  }
+}
+
+/* flex를 활용할 경우 */
+.lion {
+  inline-size: 500px;
+  block-size: 200px;
+  margin-block: 20px;
+  box-shadow: 0 0 0 10px red;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  /* align-items: center; */
+  /* flex-direction, flex-wrap 속성의 단축 속성 */
+  .lion-item {
+    /* inline-size: 100px; */
+  }
+}
+
+/* float를 활용할 경우 */
+.like {
+  margin-block: 20px;
+  box-shadow: 0 0 0 10px blue;
+  display: flow-root;
+
+  .like-item {
+    float: inline-end;
+  }
+}
