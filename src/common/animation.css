@@ -1,1 +1,17 @@
 /* 애니메이션 관련 CSS */
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade .target-animation {
+  animation: fade 2s ease-in-out infinite;
+  animation-play-state: paused; /* 시작은 멈춘 상태 */
+}
