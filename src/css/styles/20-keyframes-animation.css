@@ -54,3 +54,82 @@ body {
   animation-direction: alternate;
   animation-play-state: paused;
 }
+
+/* shrink 애니메이션 */
+.shrink .target-animation {
+  animation: shrink 2s infinite ease-in-out;
+  animation-play-state: running;
+}
+
+/* bounce바운스 에니메이션 */
+.bounce .target-animation {
+  animation: bounce 1s infinite ease-in-out alternate;
+  animation-play-state: paused; /* 필요시 paused로 바꿀 수 있어 */
+}
+
+.shake .target-animation {
+  animation: shake 2s infinite ease-in-out alternate;
+  animation-play-state: running;
+}
+.spin .target-animation {
+  width: 120px;
+  aspect-ratio: 1;
+  background: conic-gradient(red 0% 25%, green 50% 75%, blue 75% 100%, yellow);
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+  animation-play-state: paused;
+}
+
+.pulse .target-animation {
+  animation: pulse 1s infinite ease-in-out alternate;
+  animation-play-state: paused;
+}
+
+.flip .target-animation {
+  animation: flip 1s infinite ease-in-out;
+}
+
+.wobble .target-animation {
+  animation: wobble 1s infinite ease-in-out;
+}
+
+.rotate .target-animation {
+  inline-size: 120px;
+  aspect-ratio: 1;
+  position: relative;
+
+  /* CSS 변수를 활용한 애니메이션 */
+
+  .rotate {
+    /* background: #000; */
+  }
+  .rotate .target-animation {
+    --rotation: 0deg;
+
+    inline-size: 120px;
+    aspect-ratio: 1;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      inset-block-start: 50%;
+      inset-inline-start: 50%;
+      background: conic-gradient(from var(--rotation), red 0 30%, transparent 30% 100%);
+      z-index: -1;
+      padding: 5px;
+      inline-size: 100%;
+      block-size: 100%;
+      box-sizing: content-box;
+      translate: -50% -50%;
+      border-radius: 0.5rem;
+      animation: rotate 500ms infinite linear;
+      animation-play-state: paused;
+    }
+
+    &::before {
+      filter: blur(10px);
+    }
+  }
+}

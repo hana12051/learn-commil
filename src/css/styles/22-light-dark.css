@@ -1,0 +1,13 @@
+:root {
+  color-scheme: light dark;
+}
+body {
+  margin: 50px;
+  background-color: goldenrod;
+  color: light-dark(green, red);
+
+  /* 미디어 쿼리 사용으로 다크 모드 만느 거 가능 */
+  @madic (prefers-color-scheme: dark) {
+    background-color: teal;
+  }
+}
